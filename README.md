@@ -61,7 +61,7 @@ Balíčku vytvořte soubor `setup.py`. Stačí pokud bude obsahovat základní i
 ## Typování
 Balíčku (metodám) dopiště kompletní typování (pomoci modulu `typing`).
 
-Balíček obsahuje třídu `tictactoe.Stone`. Jedná se o třídu výčtového typu (`Enum`). Tyto třídy slouží k uchovávání výčtu údajů. Třídu `tictactoe.Stone` můžeme používat pro reprezentaci hracího kamene (což je vhodnější než použití řetězce):
+Balíček obsahuje třídu `Stone`. Jedná se o třídu výčtového typu (`Enum`). Tyto třídy slouží k uchovávání výčtu údajů. Třídu `Stone` můžeme používat pro reprezentaci hracího kamene (což je vhodnější než použití řetězce):
 
 ```python
 class Stone(Enum):
