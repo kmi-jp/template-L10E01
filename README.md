@@ -59,7 +59,7 @@ Winner: O
 Balíčku vytvořte soubor `setup.py`. Stačí pokud bude obsahovat základní informace a balíček půjde nainstalovat pomocí `pip install -e .`.
 
 ## Typování
-Balíčku (metodám) dopiště kompletní typování (pomoci modulu `typing`).
+Balíčku (metodám) dopiště kompletní typování (pomoci modulu `typing`, včetně krátkých docstringů obsahující typy).
 
 Balíček obsahuje třídu `Stone`. Jedná se o třídu výčtového typu (`Enum`). Tyto třídy slouží k uchovávání výčtu údajů. Třídu `Stone` můžeme používat pro reprezentaci hracího kamene (což je vhodnější než použití řetězce):
 
