@@ -31,7 +31,7 @@ class TicTacToe:
 
         # if game already have a winner
         if self.winner:
-            ValueError(f"Game is over (winner is: {self.winner}).")
+            raise ValueError(f"Game is over (winner is: {self.winner}).")
 
         # if coords already contains stone
         if self.board[x][y] != " ":
@@ -56,9 +56,10 @@ class TicTacToe:
 
     def eval(self):
         board_T = tuple(zip(*self.board))
+        board_reversed = list(reversed(self.board))
 
         diagonal = (self.board[idx][idx] for idx in range(3))
-        diagonal_T = (board_T[idx][idx] for idx in range(3))
+        diagonal_T = (board_reversed[idx][idx] for idx in range(3))
 
         # test if some row contains winning possition
         test_rows = any((self._all_active_stones(row) for row in self.board))
